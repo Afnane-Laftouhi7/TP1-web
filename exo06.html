@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercie 6</title>
+</head>
+<body>
+    <form action="" method="post" name="Contact">
+        <h1>Formulaire Contact</h1>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" title="entrez votre nom" required><br><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" title="entrez votre email" required><br><br>
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet" maxlength="60" title="60 caracteres au maximum" ><br><br>
+        <label for="message">Message :</label>
+        <textarea  id="message" name="message" minlength="50" title="le message doit avoir au minimum 50 carateres" ></textarea>
+        <br><br>
+        <input type="submit" name="envoyer" value="Envoyer">
+    </form>
+</body>
+</html>

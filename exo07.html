@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerice 7</title>
+</head>
+<body>
+    <h1>Créer un compte</h1>
+    <form action="" method="post" name="creerCompte">
+        <fieldset><legend><h2>Identité</h2></legend>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" title="entrez votre nom" required><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" title="entrez votre prénom" required><br><br>
+        <label for="dateNaiss">Date de naissance :</label>
+        <input type="date" id="dateNaiss" name="dateNaiss" min="1900-01-01" max="2025-10-23" required><br><br>
+</fieldset>
+<fieldset><legend><h2>Contact</h2></legend>
+<label for="mobile">Téléphone :</label>
+        <input type="tel" id="mobile" name="mobile" pattern="^0[5-7]\d{8}$" placeholder="06XXXXXXXX" ><br><br>
+        <label for="site">Site personnel:</label>
+        <input type="url" id="site" name="site"  required><br><br>
+</fieldset>
+<fieldset><legend><h2>Sécurité</h2></legend>
+<label for="passW">Mot de passe :</label>
+        <input type="password" id="passW" name="passW" minlength="8" ><br><br>
+        <label for="comfirmation">Confirmer le mot de passe:</label>
+        <input type="password" id="comfirmation" name="comfirmation"  required><br><br>
+</fieldset>
+<fieldset><legend><h2>Préférences</h2></legend>
+<label for="newsletter">Recevoir la newsletter :</label>
+        <input type="checkbox" id="newsletter" name="newsletter"  ><br><br>
+        <label>Rôle :</label><br>
+              <input type="radio" id="etudiant" name="role" value="Etudiant" required>
+            <label for="etudiant">Étudiant</label><br>
+       <input type="radio" id="pro" name="role" value="Pro">
+            <label for="pro">Professionnel</label><br><br>
+</fieldset>
+<br>
+     <input type="submit" name="envoyer" value="Envoyer">
+    </form>
+</body>
+</html>
